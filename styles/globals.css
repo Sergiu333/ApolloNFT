@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-gradient{
+    background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+}
+
+body{
+ background: #110929;
+}
+
+.ellipse-header{
+    background: rgba(214, 34, 218, 0.59);
+    filter: blur(247px);
+}
