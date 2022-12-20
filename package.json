@@ -3,10 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write \"./**/*.{ts,tsx,css}\" --config ./.prettierrc"
   },
   "dependencies": {
     "next": "latest",
+    "prettier": "^2.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
