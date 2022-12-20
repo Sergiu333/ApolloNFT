@@ -24,7 +24,7 @@ const Header = () => {
 
   return(
       <div className="px-[120px] flex flex-row justify-between items-center">
-          <div className="absolute w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header"/>
+          <div className="absolute w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10"/>
           <Image
               className="py-[19.5px]"
               src="/ApolloNFT.svg"
@@ -35,7 +35,7 @@ const Header = () => {
           <div className="flex flex-row gap-[40px]">
               {routes.map(({ url, text }, index) => {
                   return (
-                      <div className="text-white text-[16px] leading-[19px]">
+                      <div className="text-[16px] leading-[19px]" key={`${index}`}>
                           <Link href={url}>
                               {text}
                           </Link>
