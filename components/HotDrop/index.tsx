@@ -133,6 +133,7 @@ const HotDrop = () => {
             );
           })}
         </div>
+        <div className="flex btn-gradient py-[16px] px-[32px] w-fit rounded-[66px] self-center">View More</div>
       </div>
     </div>
   );
