@@ -29,13 +29,13 @@ const Hero = () => {
     <div className="px-[120px] pt-[120px]">
       <div className="flex flex-row justify-between">
         <div className="flex flex-col font-extrabold text-[94px] leading-[90px]">
-          <div>Create Your</div>
+          <div className="-tracking-[2px]">Create Your</div>
           <div className="flex flex-row">
-            <div>Own&nbsp;</div>
-            <div className="color-title">NFT Dream</div>
+            <div className="-tracking-[2px]">Own&nbsp;</div>
+            <div className="color-title -tracking-[2px]">NFT Dream</div>
           </div>
           <div className="flex flex-row">
-            <div>Gallery</div>
+            <div className="-tracking-[2px]">Gallery</div>
             <Image className="py-[19.5px]" src="/star.svg" alt="logo" width={84} height={84} />
           </div>
 
