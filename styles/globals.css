@@ -4,25 +4,25 @@
 @tailwind utilities;
 
 .btn-gradient {
-  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
+    background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
 }
 
 .btn-description {
-  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
+    background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
 }
 
 body {
-  background: #110929;
-  color: white;
+    background: #110929;
+    color: white;
 }
 
 .ellipse-header {
-  background: rgba(214, 34, 218, 0.59);
-  filter: blur(247px);
+    background: rgba(214, 34, 218, 0.59);
+    filter: blur(247px);
 }
 
 .color-title {
-  background: linear-gradient(to right, rgba(141, 28, 254, 1), rgba(0, 56, 237, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(141, 28, 254, 1), rgba(0, 56, 237, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
