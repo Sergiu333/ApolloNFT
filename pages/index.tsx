@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import HotDrop from '../components/HotDrop';
 import LiveAucition from '../components/Live-aucition';
 import SellNFT from '../components/SellNFT';
+import TheWeek from '../components/TheWeek';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <HotDrop />
       <LiveAucition />
       <SellNFT />
+      <TheWeek />
     </div>
   );
 };
