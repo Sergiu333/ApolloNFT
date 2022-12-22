@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <HotDrop />
       <LiveAucition />
       <SellNFT />
-      <TheWeek/>
+      <TheWeek />
     </div>
   );
 };

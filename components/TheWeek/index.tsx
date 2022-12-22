@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 const TheWeek = () => {
-
   const cards = [
     {
       src: '/Person 1.png',
@@ -35,14 +34,19 @@ const TheWeek = () => {
     },
   ];
 
-  return(
+  return (
     <div className="px-[120px] pt-[95px]">
       <div className="flex flex-col gap-[34px]">
-        <div className="font-bold text-[48px] leading-[58px] -tracking-[0.02em]">Creator of The Week</div>
+        <div className="font-bold text-[48px] leading-[58px] -tracking-[0.02em]">
+          Creator of The Week
+        </div>
         <div className="grid grid-cols-3 gap-[21px]">
           {cards.map(({ src, name, price }, index) => {
             return (
-              <div className="flex flex-row gap-[13px] bg-[#251163] p-[16px] rounded-[14px]" key={`${index}`}>
+              <div
+                className="flex flex-row gap-[13px] bg-[#251163] p-[16px] rounded-[14px]"
+                key={`${index}`}
+              >
                 <Image src={src} alt="person" width={61} height={61} />
                 <div className="flex flex-row gap-[13px]">
                   <div className="font-semibold text-[24px] leading-[26px]">Eka Prakasa</div>
@@ -59,7 +63,7 @@ const TheWeek = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default TheWeek;
