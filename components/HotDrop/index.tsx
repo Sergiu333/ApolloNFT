@@ -98,13 +98,10 @@ const HotDrop = () => {
             );
           })}
         </div>
-        <div className="grid grid-cols-12 gap-[20px]">
+        <div className="grid grid-cols-4 gap-[20px]">
           {cards.map(({ src, title, eth, time, count }, index) => {
             return (
-              <div
-                className="grid col-span-3 bg-white w-fit rounded-[6px] p-[10px] flex flex-col"
-                key={`${index}`}
-              >
+              <div className="bg-white w-fit rounded-[6px] p-[10px] flex flex-col" key={`${index}`}>
                 <Image className="" src={src} alt="logo" width={265} height={262} />
                 <div className="flex flex-col">
                   <div className="text-[#242323] font-bold text-[18px] leading-[34px] -tracking-[0.02em]">
@@ -133,7 +130,9 @@ const HotDrop = () => {
             );
           })}
         </div>
-        <div className="flex btn-gradient py-[16px] px-[32px] w-fit rounded-[66px] self-center">View More</div>
+        <button className="flex btn-gradient py-[16px] px-[32px] w-fit rounded-[66px] self-center">
+          View More
+        </button>
       </div>
     </div>
   );
