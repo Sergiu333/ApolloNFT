@@ -30,3 +30,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.header-logo-gradient {
+  background: linear-gradient(101.54deg, #b235ff -9.3%, #001447 70.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -6,6 +6,7 @@ import LiveAucition from '../components/Live-aucition';
 import SellNFT from '../components/SellNFT';
 import TheWeek from '../components/TheWeek';
 import Community from '../components/Community';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <SellNFT />
       <TheWeek />
       <Community />
+      <Footer />
     </div>
   );
 };
