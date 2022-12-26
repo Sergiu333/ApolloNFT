@@ -88,7 +88,7 @@ const HotDrop = () => {
 
   return (
     <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-[95px]">
-      <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[0.02em] pb-[8px]">
+      <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[0.02em] pb-[32px]">
         Super Hot Drop
       </div>
       <div className="flex flex-col gap-[47px]">
