@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import useWindowWidth from '../../utils/hooks/use-window-width';
 
 const HotDrop = () => {
+  const width = useWindowWidth();
+
   const buttons = [
     {
       link: '/',
@@ -89,7 +92,7 @@ const HotDrop = () => {
         Super Hot Drop
       </div>
       <div className="flex flex-col gap-[47px]">
-        <div className="flex flex-row gap-[22px] overflow-scroll">
+        <div className="flex flex-row gap-[22px] overflow-auto">
           {buttons.map(({ link, text }, index) => {
             return (
               <button
@@ -103,9 +106,12 @@ const HotDrop = () => {
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] place-items-center">
           {cards.map(({ src, title, eth, time, count }, index) => {
-            if(index<3 ){
+            if (index < 4 && width <= 768) {
               return (
-                <div className="bg-white w-fit rounded-[6px] p-[10px] flex flex-col" key={`${index}`}>
+                <div
+                  className="bg-white w-fit rounded-[6px] p-[10px] flex flex-col"
+                  key={`${index}`}
+                >
                   <Image className="" src={src} alt="logo" width={265} height={262} />
                   <div className="flex flex-col">
                     <div className="text-[#242323] font-bold text-[18px] leading-[34px] -tracking-[0.02em]">
@@ -117,9 +123,40 @@ const HotDrop = () => {
                         <div className="text-[#6AD38F] font-medium text-[12px] leading-[15px]">
                           {eth}
                         </div>
-                        <div className="text-[#989898] text-[12px] leading-[15px]">
-                          {count}
+                        <div className="text-[#989898] text-[12px] leading-[15px]">{count}</div>
+                      </div>
+                    </div>
+                    <hr className="border border-[#EDECEC] my-[10px]" />
+                    <div className="flex flex-row justify-between items-center">
+                      <div className="text-[#1C51FE] text-[12px] leading-[15px] -tracking-[0.02em] bg-[#BBA5FF]/[.4] rounded-[66px] w-fit p-[4px]">
+                        {time}
+                      </div>
+                      <div className="text-[#1C51FE] font-bold text-[12px] leading-[15px] -tracking-[0.02em]">
+                        Place a bid
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            if (width >= 768) {
+              return (
+                <div
+                  className="bg-white w-fit rounded-[6px] p-[10px] flex flex-col"
+                  key={`${index}`}
+                >
+                  <Image className="" src={src} alt="logo" width={265} height={262} />
+                  <div className="flex flex-col">
+                    <div className="text-[#242323] font-bold text-[18px] leading-[34px] -tracking-[0.02em]">
+                      ArtCrypto
+                    </div>
+                    <div className="flex flex-row gap-[6px] w-full items-center">
+                      <Image className="" src="/base.svg" alt="eth" width={21} height={21} />
+                      <div className="flex flex-row w-full items-center justify-between">
+                        <div className="text-[#6AD38F] font-medium text-[12px] leading-[15px]">
+                          {eth}
                         </div>
+                        <div className="text-[#989898] text-[12px] leading-[15px]">{count}</div>
                       </div>
                     </div>
                     <hr className="border border-[#EDECEC] my-[10px]" />

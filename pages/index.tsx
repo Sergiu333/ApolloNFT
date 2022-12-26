@@ -15,8 +15,8 @@ const Home: NextPage = () => {
       {/*<Hero />*/}
       <HotDrop />
       {/*<LiveAucition />*/}
-      <SellNFT />
-      <TheWeek />
+      {/*<SellNFT />*/}
+      {/*<TheWeek />*/}
       {/*<Community />*/}
       {/*<Footer />*/}
     </div>
