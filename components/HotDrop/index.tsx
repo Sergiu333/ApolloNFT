@@ -87,7 +87,7 @@ const HotDrop = () => {
   ];
 
   return (
-    <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-[95px]">
+    <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-[81px] md:pt-[95px]">
       <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[0.02em] pb-[32px]">
         Super Hot Drop
       </div>
@@ -104,7 +104,7 @@ const HotDrop = () => {
             );
           })}
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] place-items-center">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] place-items-center">
           {cards.map(({ src, title, eth, time, count }, index) => {
             if (index < 4 && width <= 768) {
               return (

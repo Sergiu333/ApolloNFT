@@ -29,13 +29,13 @@ const Footer = () => {
   ];
 
   return (
-    <div className="px-[120px] pt-[176px]">
-      <div className="pb-19px text-white ">
-        <div className="gap-[125px] flex flex-row pb-[39px]">
+    <div className="px-[24px] md:px-[40px] lg:px-[60px] pt-[64px] xl:pt-[120px]">
+      <div className="pb-[19px] text-white">
+        <div className="gap-[64px] sm:gap-[125px] flex flex-col md:flex-row pb-[39px]">
           <div className="flex flex-col items-start gap-[17px]">
             <div className="font-bold text-[50.52px] leading-[61px]">
               <span className="header-logo-gradient">Apollo</span>
-              <span className="text-secondary-main header-logo-gradient">NFT</span>
+              <span className="text-secondary-main">NFT</span>
             </div>
             <div className="font-['Inter'] font-normal text-[18px] leading-[18px] text-[#999999] not-italic w-[279px]">
               This growth plan will help you reach your resolutions and achieve the goals you have
@@ -47,7 +47,7 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <div className="flex flex-row justify-between w-full ">
+          <div className="md:flex md:flex-row grid grid-cols-2 gap-[54px] md:gap-[10px] justify-between w-full">
             <div className="flex flex-col items-start">
               <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
                 Marketplace
@@ -64,7 +64,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
             <div className="flex flex-col items-start">
               <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
                 Resources
@@ -79,7 +78,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
             <div className="flex flex-col items-start">
               <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
                 Company
@@ -90,7 +88,6 @@ const Footer = () => {
                 <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Pricing</div>
               </div>
             </div>
-
             <div className="flex flex-col items-start">
               <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
                 Legal
