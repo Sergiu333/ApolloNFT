@@ -11,14 +11,14 @@ import Footer from '../components/Footer';
 const Home: NextPage = () => {
   return (
     <div>
-      <Header />
-      <Hero />
+      {/*<Header />*/}
+      {/*<Hero />*/}
       <HotDrop />
-      <LiveAucition />
+      {/*<LiveAucition />*/}
       <SellNFT />
       <TheWeek />
-      <Community />
-      <Footer />
+      {/*<Community />*/}
+      {/*<Footer />*/}
     </div>
   );
 };

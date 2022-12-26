@@ -84,50 +84,57 @@ const HotDrop = () => {
   ];
 
   return (
-    <div className="px-[120px] pt-[95px]">
+    <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-[95px]">
+      <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[0.02em] pb-[8px]">
+        Super Hot Drop
+      </div>
       <div className="flex flex-col gap-[47px]">
-        <div className="flex flex-row gap-[22px]">
+        <div className="flex flex-row gap-[22px] overflow-scroll">
           {buttons.map(({ link, text }, index) => {
             return (
               <button
                 key={`${index}`}
-                className="py-[16px] px-[32px] bg-[#39324D] rounded-[66px] text-[16px] leading-[19px] focus:font-semibold focus-btn-gradient"
+                className="py-[8px] md:py-[16px] px-[32px] bg-[#39324D] rounded-[66px] text-[16px] leading-[19px] focus:font-semibold focus-btn-gradient whitespace-pre"
               >
                 {text}
               </button>
             );
           })}
         </div>
-        <div className="grid grid-cols-4 gap-[20px]">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] place-items-center">
           {cards.map(({ src, title, eth, time, count }, index) => {
-            return (
-              <div className="bg-white w-fit rounded-[6px] p-[10px] flex flex-col" key={`${index}`}>
-                <Image className="" src={src} alt="logo" width={265} height={262} />
-                <div className="flex flex-col">
-                  <div className="text-[#242323] font-bold text-[18px] leading-[34px] -tracking-[0.02em]">
-                    ArtCrypto
-                  </div>
-                  <div className="flex flex-row gap-[6px] w-[21px] h-[21px] w-full items-center">
-                    <Image className="" src="/base.svg" alt="eth" width={21} height={21} />
-                    <div className="flex flex-row w-full items-center justify-between ">
-                      <div className="text-[#6AD38F] font-medium text-[12px] leading-[15px]">
-                        {eth}
+            if(index<3 ){
+              return (
+                <div className="bg-white w-fit rounded-[6px] p-[10px] flex flex-col" key={`${index}`}>
+                  <Image className="" src={src} alt="logo" width={265} height={262} />
+                  <div className="flex flex-col">
+                    <div className="text-[#242323] font-bold text-[18px] leading-[34px] -tracking-[0.02em]">
+                      ArtCrypto
+                    </div>
+                    <div className="flex flex-row gap-[6px] w-[21px] h-[21px] w-full items-center">
+                      <Image className="" src="/base.svg" alt="eth" width={21} height={21} />
+                      <div className="flex flex-row w-full items-center justify-between">
+                        <div className="text-[#6AD38F] font-medium text-[12px] leading-[15px]">
+                          {eth}
+                        </div>
+                        <div className="text-[#989898] text-[12px] leading-[15px]">
+                          {count}
+                        </div>
                       </div>
-                      <div className="text-[#989898] text-[12px] leading-[15px]">{count}</div>
                     </div>
-                  </div>
-                  <hr className="border border-[#EDECEC] my-[10px]" />
-                  <div className="flex flex-row justify-between items-center">
-                    <div className="text-[#1C51FE] text-[12px] leading-[15px] -tracking-[0.02em] bg-[#BBA5FF]/[.4] rounded-[66px] w-fit p-[4px]">
-                      {time}
-                    </div>
-                    <div className="text-[#1C51FE] font-bold text-[12px] leading-[15px] -tracking-[0.02em]">
-                      Place a bid
+                    <hr className="border border-[#EDECEC] my-[10px]" />
+                    <div className="flex flex-row justify-between items-center">
+                      <div className="text-[#1C51FE] text-[12px] leading-[15px] -tracking-[0.02em] bg-[#BBA5FF]/[.4] rounded-[66px] w-fit p-[4px]">
+                        {time}
+                      </div>
+                      <div className="text-[#1C51FE] font-bold text-[12px] leading-[15px] -tracking-[0.02em]">
+                        Place a bid
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
+              );
+            }
           })}
         </div>
         <button className="flex btn-gradient py-[16px] px-[32px] w-fit rounded-[66px] self-center">
