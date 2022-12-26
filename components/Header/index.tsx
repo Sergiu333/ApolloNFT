@@ -7,20 +7,20 @@ const Header = () => {
   const routes = [
     {
       url: '/drop',
-      text: 'Drop'
+      text: 'Drop',
     },
     {
       url: '/marketplace',
-      text: 'Marketplace'
+      text: 'Marketplace',
     },
     {
       url: '/creator',
-      text: 'Creator'
+      text: 'Creator',
     },
     {
       url: '/community',
-      text: 'Community'
-    }
+      text: 'Community',
+    },
   ];
 
   const toggleHamburger = () => {
@@ -31,10 +31,10 @@ const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   return (
-    <div className='px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] flex flex-row justify-between items-center'>
-      <div className='absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between' />
-      <Image className='py-[19.5px]' src='/ApolloNFT.svg' alt='logo' width={171} height={40} />
-      <div className='flex flex-row gap-[40px]'>
+    <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] flex flex-row justify-between items-center">
+      <div className="absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between" />
+      <Image className="py-[19.5px]" src="/ApolloNFT.svg" alt="logo" width={171} height={40} />
+      <div className="flex flex-row gap-[40px]">
         <div className={'relative'}>
           <div
             className={`${
@@ -50,8 +50,9 @@ const Header = () => {
                   className={`flex flex-col items-center justify-center w-full lg:w-[80px] whitespace-nowrap`}
                 >
                   <div
-                    className='relative link mb-6 lg:mb-0 lg:after:hover:w-full lg:after:hover:left-0 lg:font-bold
-                          after:bottom-0 lg:after:-bottom-[28px]'>
+                    className="relative link mb-6 lg:mb-0 lg:after:hover:w-full lg:after:hover:left-0 lg:font-bold
+                          after:bottom-0 lg:after:-bottom-[28px]"
+                  >
                     {text}
                   </div>
                 </div>
@@ -60,13 +61,12 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div
-        className='hidden lg:grid text-white text-[16px] leading-[19px] w-[149px] h-[51px] rounded-[66px] flex justify-center items-center btn-gradient'>
+      <div className="hidden lg:grid text-white text-[16px] leading-[19px] w-[149px] h-[51px] rounded-[66px] flex justify-center items-center btn-gradient">
         Contact Us
       </div>
       <div className={`w-full flex justify-end lg:hidden py-6`} onClick={toggleHamburger}>
-      <Hamburger isOpen={hamburgerOpen} />
-    </div>
+        <Hamburger isOpen={hamburgerOpen} />
+      </div>
     </div>
   );
 };

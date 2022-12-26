@@ -38,9 +38,8 @@ const Footer = () => {
               <span className="text-secondary-main">NFT</span>
             </div>
             <div className="font-['Inter'] font-normal text-[18px] leading-[18px] text-[#999999] not-italic w-[279px]">
-              This growth plan will help you reach your
-              resolutions and achieve the goals you have been
-              striving towards.
+              This growth plan will help you reach your resolutions and achieve the goals you have
+              been striving towards.
             </div>
             <div className="flex flex-row items-center gap-[24px]">
               {social.map(({ src, alt }, index) => {
@@ -73,9 +72,7 @@ const Footer = () => {
                 <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
                   About Us
                 </div>
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Event
-                </div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Event</div>
                 <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
                   Tutorial
                 </div>
@@ -86,15 +83,9 @@ const Footer = () => {
                 Company
               </div>
               <div className="flex flex-col gap-[9px]">
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Media
-                </div>
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Blog
-                </div>
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Pricing
-                </div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Media</div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Blog</div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Pricing</div>
               </div>
             </div>
             <div className="flex flex-col items-start">
@@ -102,23 +93,17 @@ const Footer = () => {
                 Legal
               </div>
               <div className="flex flex-col gap-[9px]">
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Terms
-                </div>
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Privacy
-                </div>
-                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">
-                  Support
-                </div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Terms</div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Privacy</div>
+                <div className="text-[#999999] font-normal text-[15px] leading-[18px]">Support</div>
               </div>
             </div>
           </div>
         </div>
         <div className="flex flex-row justify-center items-center pt-8 gap-8 border-t border-t-inner-border">
-                    <span className="text-gray-400 font-normal text-base">
-                        © 2077 ApolloNFT. All rights reserved.
-                    </span>
+          <span className="text-gray-400 font-normal text-base">
+            © 2077 ApolloNFT. All rights reserved.
+          </span>
         </div>
       </div>
     </div>
