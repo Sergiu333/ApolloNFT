@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-6 md:pt-[120px]">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex flex-col font-extrabold text-[41px] leading-[40px] md:text-[94px] md:leading-[90px]">
+        <div className="flex flex-col font-extrabold text-[41px] leading-[40px] md:text-[94px] lg:text-[70px] xl:text-[94px] md:leading-[90px] lg:leading-[70px] xl:leading-[90px]">
           <div>
             <div className="-tracking-[2px]">Create Your</div>
             <div className="flex flex-row whitespace-pre">
