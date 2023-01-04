@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>ApolloNFT</title>
           <meta name="apple-mobile-web-app-title" content="ApolloNFT" />
           <meta name="application-name" content="ApolloNFT" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
