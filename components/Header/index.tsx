@@ -39,7 +39,7 @@ const Header = () => {
           <div
             className={`${
               hamburgerOpen && width <= 1024
-                ? 'fixed flex flex-col bg-[#1E2129] top-0 right-0 bottom-0 w-3/5 py-[50px] z-40'
+                ? 'fixed flex flex-col bg-[#110929] top-0 right-0 bottom-0 w-3/5 py-[50px] z-40'
                 : 'relative grid-cols-4 hidden lg:flex lg:gap-10'
             }`}
           >

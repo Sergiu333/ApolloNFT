@@ -60,14 +60,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block">
-          <div className="absolute right-[103px] top-[195px] z-30 w-[240.73px] h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
+        <div className="h-[440px] w-full flex justify-center">
+          <div className="absolute right-[63px] xs:right-[103px] lg:right-[103px] top-[530px] lg:top-[195px] z-30 w-[227.5px] h-[271.15px] lg:w-[240.73px] lg:h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
             <Image className="" src="/image_1.png" alt="logo" layout="fill" />
           </div>
-          <div className="absolute right-[182px] top-[146px] z-20 w-[240.73px] h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
+          <div className="absolute right-[122px] xs:right-[182px] ld:right-[182px] top-[470px] lg:top-[146px] z-20 w-[227.5px] h-[271.15px] lg:w-[240.73px] lg:h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
             <Image className="" src="/image_2.png" alt="logo" layout="fill" />
           </div>
-          <div className="absolute right-[47px] top-[260px] z-10 w-[240.73px] h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
+          <div className="absolute right-[20px] xs:right-[47px] lg:right-[47px] top-[580px] lg:top-[260px] z-10 w-[227.5px] h-[271.15px] lg:w-[240.73px] lg:h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
             <Image className="" src="/image_3.png" alt="logo" layout="fill" />
           </div>
         </div>
