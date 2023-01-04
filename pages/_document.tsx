@@ -3,8 +3,8 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
-        <Head>
+      <Html lang="en">
+        <Head >
           <title>ApolloNFT</title>
           <meta name="apple-mobile-web-app-title" content="ApolloNFT" />
           <meta name="application-name" content="ApolloNFT" />

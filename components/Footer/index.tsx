@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-[17px]">
             <div className="font-bold text-[50.52px] leading-[61px]">
               <span className="header-logo-gradient">Apollo</span>
-              <span className="text-secondary-main">NFT</span>
+              <span className="text-[#1C51FE]">NFT</span>
             </div>
             <div className="font-['Inter'] font-normal text-[18px] leading-[18px] text-[#999999] not-italic w-[279px]">
               This growth plan will help you reach your resolutions and achieve the goals you have

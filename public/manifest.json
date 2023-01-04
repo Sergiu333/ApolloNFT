@@ -1,13 +1,13 @@
 {
-  "name": "PWA corLab",
-  "short_name": "Corlab",
-  "description": "PWA corlab website",
+  "name": "ApolloNFT",
+  "short_name": "ApolloNFT",
+  "description": "PWA ApolloNFT website",
   "theme_color": "#1e2129",
   "background_color": "#1e2129",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "./index.tsx",
+  "start_url": "/",
   "icons": [
     {
       "src": "/icon-192x192.png",
