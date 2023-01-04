@@ -3,7 +3,7 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <title>ApolloNFT</title>
           <meta name="apple-mobile-web-app-title" content="ApolloNFT" />

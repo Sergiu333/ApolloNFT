@@ -7,7 +7,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "./index.tsx",
+  "start_url": "/",
   "icons": [
     {
       "src": "/icon-192x192.png",

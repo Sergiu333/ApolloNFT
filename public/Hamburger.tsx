@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Hamburger({ isOpen }) {
+export default function Hamburger(isOpen:any) {
   return (
     <>
       <div className={`hamburger`}>
