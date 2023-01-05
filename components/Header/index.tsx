@@ -33,7 +33,8 @@ const Header = () => {
   return (
     <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] flex flex-row justify-between items-center fixed top-0 right-0 left-0 bg-[#110929] transition-colors delay-100">
       {/*<div className="absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between" />*/}
-      <Image className="py-[19.5px]" src="/ApolloNFT.svg" alt="logo" width={171} height={40} />
+      <Image className="py-[19.5px] hidden md:block" src="/ApolloNFT.svg" alt="logo" width={171} height={40} />
+      <Image className="py-[19.5px] block md:hidden" src="/ApolloNFT.svg" alt="logo" width={121} height={30} />
       <div className="flex flex-row gap-[40px]">
         <div className={'relative'}>
           <div

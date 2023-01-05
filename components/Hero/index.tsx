@@ -39,13 +39,15 @@ const Hero = () => {
           </div>
           <div className="flex flex-row">
             <div className="-tracking-[2px]">Gallery</div>
-            <Image
-              className="py-[19.5px] hidden lg:block"
-              src="/star.svg"
-              alt="logo"
-              width={84}
-              height={84}
-            />
+            <div className="animate">
+              <Image
+                className="py-[19.5px] hidden lg:block"
+                src="/star.svg"
+                alt="logo"
+                width={84}
+                height={84}
+              />
+            </div>
           </div>
 
           <div className="mt-[32px] flex flex-col md:flex-row gap-[30px]">

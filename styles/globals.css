@@ -36,3 +36,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.animate {
+  transition: transform .7s ease-in-out;
+}
+.animate:hover {
+  transform: rotate(360deg);
+}
