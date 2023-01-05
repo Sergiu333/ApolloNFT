@@ -26,7 +26,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-6 md:pt-[120px]">
+    <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-16 md:pt-[120px]">
       <div className="absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between z-10" />
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex flex-col font-extrabold text-[41px] leading-[40px] md:text-[94px] lg:text-[70px] xl:text-[94px] md:leading-[90px] lg:leading-[70px] xl:leading-[90px]">
