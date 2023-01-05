@@ -1,11 +1,11 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-
+// .next/server/pages
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <title>ApolloNFT</title>
+          <title>Apollo NFT</title>
           <meta name="apple-mobile-web-app-title" content="ApolloNFT" />
           <meta name="application-name" content="ApolloNFT" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
