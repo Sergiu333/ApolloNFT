@@ -27,6 +27,7 @@ const Hero = () => {
 
   return (
     <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-6 md:pt-[120px]">
+      <div className="absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between z-10" />
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex flex-col font-extrabold text-[41px] leading-[40px] md:text-[94px] lg:text-[70px] xl:text-[94px] md:leading-[90px] lg:leading-[70px] xl:leading-[90px]">
           <div>
@@ -60,7 +61,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="h-[440px] w-full flex justify-center">
+        <div className="h-[440px] w-full flex justify-center -z-10">
           <div className="absolute right-[63px] xs:right-[103px] lg:right-[103px] top-[530px] lg:top-[195px] z-30 w-[227.5px] h-[271.15px] lg:w-[240.73px] lg:h-[287px] 2xl:w-[388.13px] 2xl:h-[463px]">
             <Image className="" src="/image_1.png" alt="logo" layout="fill" />
           </div>

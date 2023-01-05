@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Hamburger(isOpen:any) {
+// @ts-ignore
+export default function Hamburger({isOpen}) {
   return (
     <>
       <div className={`hamburger`}>
