@@ -37,7 +37,7 @@ const TheWeek = () => {
   return (
     <div className="px-[24px] md:px-[40px] lg:px-[60px] xl:px-[120px] pt-[95px]">
       <div className="flex flex-col gap-[34px]">
-        <div className="font-bold text-[48px] leading-[58px] -tracking-[0.02em]">
+        <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[0.02em]  ">
           Creator of The Week
         </div>
         <div className="grid md:grid-cols -1 md:grid-cols-2 2xl:grid-cols-3 gap-[21px]">

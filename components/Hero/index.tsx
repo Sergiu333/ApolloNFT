@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-[29px] pt-[44px] md:pt-[69px]">
+      <div className="flex flex-row gap-[29px] pt-24 md:pt-[69px]">
         <div className="flex flex-col gap-[8px]">
           <div className="text-[16px] leading-[19px]">Artwork</div>
           <div className="font-bold text-[28px] leading-[34px]">25.1k</div>
@@ -92,7 +92,7 @@ const Hero = () => {
       <div className="pt-[32px] flex flex-wrap md:flex-row md:justify-between justify-center items-center md:py-6 gap-4 md:gap-[48px]">
         {icones.map(({ src, alt }, index) => {
           return (
-            <div className="py-[24px]" key={`${index}`}>
+            <div className="md:pt-[24px]" key={`${index}`}>
               <Image className="  md:block" src={src} alt={alt} width={140} height={48} />
             </div>
           );
