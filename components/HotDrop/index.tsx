@@ -129,9 +129,7 @@ const HotDrop = () => {
                         <div className="text-[#989898] text-[12px] leading-[15px]">{count}</div>
                       </div>
                       </div>
-
                     </div>
-
                     <hr className="border border-[#EDECEC] my-[10px]" />
                     <div className="flex flex-row justify-between items-center">
                       <div className="text-[#1C51FE] text-[12px] leading-[15px] -tracking-[0.02em] bg-[#BBA5FF]/[.4] rounded-[66px] w-fit p-[4px]">
