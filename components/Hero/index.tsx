@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between z-10" />
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex flex-col font-extrabold text-[41px] leading-[40px] md:text-[94px] lg:text-[70px] xl:text-[94px] md:leading-[90px] lg:leading-[70px] xl:leading-[90px]">
-          <div>
+          <div className="z-10">
             <div className="-tracking-[2px]">Create Your</div>
             <div className="flex flex-row whitespace-pre">
               <div className="-tracking-[2px]">Own&nbsp;</div>
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-row">
-            <div className="-tracking-[2px]">Gallery</div>
+            <div className="-tracking-[2px] z-10">Gallery</div>
             <div className="animate">
               <Image
                 className="py-[19.5px] hidden lg:block"

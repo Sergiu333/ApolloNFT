@@ -1,8 +1,6 @@
-import Head from 'next/head'
-import Footer from '../components/Footer'
-import { getPostByUri } from '../lib/test-data';
+import Footer from '../components/Footer';
 import { client } from '../lib/apollo';
-import { gql } from '@apollo/client'
+import { gql } from '@apollo/client';
 import Header from '../components/Header';
 
 // @ts-ignore
@@ -10,29 +8,26 @@ export default function SlugPage({ post }) {
 
   return (
     <div>
-     <Header/>
-     <div className="px-[24px] md:px-[40px] lg:px-[60px] pt-[70px] xl:pt-[120px]">
-       <main>
-         <div>
-           <h1>
-             {post.title}
-           </h1>
-           {/*<div>✍️  &nbsp;&nbsp;{`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️ &nbsp;&nbsp;{ new Date(post.date).toLocaleDateString() }</div>*/}
-         </div>
-         <div dangerouslySetInnerHTML={{__html: post.content}}>
-         </div>
-       </main>
-     </div>
-
-      <Footer/>
-
+      <Header />
+      <div className='px-[24px] md:px-[40px] lg:px-[60px] pt-[70px] xl:pt-[120px]'>
+        <div>
+          <div className="pb-14 text-[30px] font-bold text-center">
+            <h1>
+              {post.title}
+            </h1>
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: post.content }}>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
 
 // @ts-ignore
-export async function getStaticProps({ params }){
+export async function getStaticProps({ params }) {
   const GET_POST_BY_URI = gql`
   query GetPostByURI($id: ID!){
   post(id: $id, idType: URI){
@@ -48,26 +43,26 @@ export async function getStaticProps({ params }){
     }
   }
 }
-  `
+  `;
 
-  const response =  await client.query({
+  const response = await client.query({
     query: GET_POST_BY_URI,
-    variables:{
+    variables: {
       id: params.uri
     }
-  })
-  const post = response?.data?.post
+  });
+  const post = response?.data?.post;
   return {
     props: {
       post
     }
-  }
+  };
 }
 
-export async function getStaticPaths(){
-  const paths: never[] = []
+export async function getStaticPaths() {
+  const paths: never[] = [];
   return {
     paths,
     fallback: 'blocking'
-  }
+  };
 }

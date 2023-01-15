@@ -2,12 +2,13 @@ import Image from 'next/image';
 import useWindowWidth from '../../utils/hooks/use-window-width';
 import { useState } from 'react';
 import Hamburger from '../../public/Hamburger';
+import Link from 'next/link';
 
 const Header = () => {
   const routes = [
     {
-      url: '/drop',
-      text: 'Drop',
+      url: '/blog',
+      text: 'Blog',
     },
     {
       url: '/marketplace',
@@ -32,9 +33,12 @@ const Header = () => {
 
   return (
     <div className="px-[24px] md:px-[40px] lg:px-[60px] flex flex-row justify-between items-center fixed top-0 right-0 left-0 bg-[#110929] transition-colors delay-100">
-      {/*<div className="absolute md:w-[555px] h-[555px] -left-[87px] -top-[41px] ellipse-header -z-10 flex justify-between" />*/}
-      <Image className="py-[19.5px] hidden md:block" src="/ApolloNFT.svg" alt="logo" width={171} height={40} />
-      <Image className="py-[19.5px] block md:hidden" src="/ApolloNFT.svg" alt="logo" width={121} height={30} />
+      <Link href='/'>
+          <Image className="py-[19.5px] hidden md:block" src="/ApolloNFT.svg" alt="logo" width={171} height={40} />
+      </Link>
+      <Link href='/'>
+          <Image className="py-[19.5px] block md:hidden" src="/ApolloNFT.svg" alt="logo" width={121} height={30} />
+      </Link>
       <div className="flex flex-row gap-[40px]">
         <div className={'relative'}>
           <div
@@ -50,12 +54,14 @@ const Header = () => {
                   key={`${index}-${text}`}
                   className={`flex flex-col items-center justify-center w-full lg:w-[80px] whitespace-nowrap`}
                 >
-                  <div
-                    className="relative link mb-6 lg:mb-0 lg:after:hover:w-full lg:after:hover:left-0 lg:font-bold
+                  <Link href={url}>
+                    <div
+                      className="relative link mb-6 lg:mb-0 lg:after:hover:w-full lg:after:hover:left-0 lg:font-bold
                           after:bottom-0 lg:after:-bottom-[28px]"
-                  >
-                    {text}
-                  </div>
+                    >
+                      {text}
+                    </div>
+                  </Link>
                 </div>
               );
             })}

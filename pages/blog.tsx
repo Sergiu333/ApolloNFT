@@ -6,7 +6,7 @@ import { Key } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 // @ts-ignore
-export default function Test({ posts }) {
+export default function Blog({ posts }) {
   // @ts-ignore
   return (
     <div>
