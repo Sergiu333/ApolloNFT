@@ -95,12 +95,14 @@ const HotDrop = () => {
         <div className="flex flex-row gap-[22px] overflow-auto">
           {buttons.map(({ link, text }, index) => {
             return (
-              <button
-                key={`${index}`}
-                className="py-[8px] md:py-[16px] px-[32px] bg-[#39324D] rounded-[66px] text-[16px] leading-[19px] focus:font-semibold focus-btn-gradient whitespace-pre"
-              >
-                {text}
-              </button>
+             <div>
+               <button
+                 key={`${index}`}
+                 className="py-[8px] md:py-[16px] px-[32px] bg-[#39324D] rounded-[66px] text-[16px] leading-[19px] focus:font-semibold focus-btn-gradient whitespace-pre"
+               >
+                 {text}
+               </button>
+             </div>
             );
           })}
         </div>
